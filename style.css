@@ -1,0 +1,343 @@
+/*RIOT
+RED #FA4753
+BLACK #17181C
+WHITE #FFFFFF
+BLUE REDUP #9BA5C9
+
+GROVE
+RED #295D09
+BLACK #69AB3D
+WHITE #E9EBED
+BLUE REDUP #AED36C
+
+GOTHAM
+RED #243B67
+BLACK #6E5DCF
+WHITE #C27DFC
+BLUE REDUP #EAEBED
+
+
+*/
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+
+}
+
+header	{
+	height: 70px;
+	background-color: #1A1A1B;
+	/*text-transform: uppercase;*/
+
+}
+
+header h1	{
+
+	display: inline-block;
+	float: left;
+	padding: 16px 24px;
+	letter-spacing: 4px;l
+	
+}
+header h1 a{
+	color: #37AA9C;
+	transition: 0.5s;
+}
+header h1 a:hover{
+	color: #94F3E4;
+}
+header ul {
+
+	float: right;
+}
+header	ul li {
+
+	padding: 24px;	
+	display: inline-block;
+
+}
+header	ul li a{
+	color: #37AA9C;
+	transition: 0.5s;
+}
+
+header	ul li a:hover {
+	color: #94F3E4;
+}
+a {
+	text-decoration: none;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+
+}
+.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.mobile-menu{
+	float: right;
+	display: none;
+	padding: 25px;
+	color: #37AA9C;
+
+}
+.mobile-menu1{
+	color: red;
+	padding: 20px;
+
+}
+.mobile-menu1:hover{
+	border-radius: 50px;
+	background-color: red;
+	color: white;
+	padding: 20px;
+}
+
+#check{
+	display: none;
+}
+.sidebar{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width: 300px;
+	background-color: rgba(26, 26, 27, .9);
+	transition: 1s;
+	z-index: 5;
+	text-align: center;
+	font-style: bold;
+
+}
+.sidebar ul li a{
+	color: #37AA9C;
+	padding: 30px;
+
+}
+.sidebar ul li{
+	padding: 30px;
+	transition: .4s;
+	transition-property: background-color;
+}
+.sidebar ul li:hover{
+	background-color: #333F44;
+}
+
+#check:checked~ .sidebar{
+	left: 0;
+	transition: .5s;
+}
+#banner{
+	/*background: linear-gradient(45deg, #8099E9, #E99DCB);*/
+	background-color: #37AA9C;
+	/*padding: 250px;*/
+	padding-bottom: 250px;
+	
+}
+#banner .text-center{
+	text-align: center;
+	color: #1A1A1B;
+	margin-top: 150px;
+}
+
+.efek-mengetik{
+	color: white;
+}
+
+section{
+	padding: 50px 0px;
+}
+
+section	h3{
+	padding-bottom: 20px;
+	text-align: center;
+	position: relative;
+	color: #37AA9C;
+	letter-spacing: 3px;
+}
+
+section h3::before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 150px;
+	height: 5px;
+	background-color: #ddd;
+	left: calc(50% - 75px);
+	border-radius: 50px;
+}
+
+#about{
+	background-color: #333F44;
+}
+#about p{
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 25px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	color: #94F3E4;
+	font-family: Courier-New;
+}
+
+#skill{
+	background-color: #1A1A1B;
+	/*background: linear-gradient(0deg, #8099E9, #E99DCB);*/
+}
+.bungkus-progres{
+	padding-top: 30px;
+}
+#skill .progress{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#skill .bar-body{
+	border-radius: 50px;
+	height: 15px;
+	background-color: #333F44;
+	margin: 10px 0px 20px 0px;
+
+}
+
+#skill .progress .nilai{
+	padding: 10px 0;
+	margin: 0 0 10px 0;
+	text-transform: uppercase;
+	font-style: normal;
+	display: block;
+	/*border: 1px solid blue;*/
+}
+#skill .progress .nilai .persen{
+	text-transform: uppercase;
+	font-style: normal;
+	float: right;
+	/*border: 1px solid red;*/
+}
+.bar-body .bar-isi1{
+	border-radius: 50px;
+	height: 15px;
+	width: 15%;
+	background-color: #37AA9C;
+	display: inline-block;
+}
+.bar-body .bar-isi2{
+	border-radius: 50px;
+	height: 15px;
+	width: 20%;
+	background-color: #37AA9C;
+	display: inline-block;
+}
+.bar-body .bar-isi3{
+	border-radius: 50px;
+	height: 15px;
+	width: 50%;
+	background-color: #37AA9C;
+	display: inline-block;
+}
+.bar-body .bar-isi4{
+	border-radius: 50px;
+	height: 15px;
+	width: 45%;
+	background-color: #37AA9C;
+	display: inline-block;
+}
+.bar-body .bar-isi5{
+	border-radius: 50px;
+	height: 15px;
+	width: 75%;
+	background-color: #37AA9C;
+	display: inline-block;
+}
+span{
+	color: #94F3E4;
+}
+
+#portfolio{
+	background-color: #333F44;
+}
+.baris{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5%;
+}
+.col-4{
+	width: 33%;
+	box-sizing: border-box;
+	padding: 10px;
+	float: left;
+	text-align: center;
+	/*border: solid 1px white;
+	*/
+}
+.col-4 img{
+	width: 100%
+
+}
+
+.col-4:hover{
+	transition: .3s;
+	transform: scale(1.2);
+}
+.bungkus-tombol{
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 20px 10px 20px;
+}
+.tombol{
+	padding: 15px;
+	background-color: white;
+	text-align: center;
+}
+
+#kontak{
+	background-color: #1A1A1B;
+}
+.col-5{
+	background-color: #333F44;
+	width: 33.33%;
+	float: left;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 50px 10px;
+	margin-top: 10px;
+}
+
+.col-5 h4{
+	color: #37AA9C;
+}
+.col-5 p{
+	color: #94F3E4;
+}
+
+footer{
+	background-color: #333;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	text-align: center;
+}
+footer small{
+	color: #fff;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media (max-width: 768px){
+	.mobile-menu {
+		display: block;
+	}
+	header ul li {
+		display: none;
+	}
+	.col-5{
+		width: 100%;
+	}
+}
